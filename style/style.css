@@ -112,7 +112,7 @@ footer{
 }
 
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1180px){
     .presentation{
         flex-direction: column;
     }
