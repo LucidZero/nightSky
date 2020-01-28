@@ -112,7 +112,7 @@ footer{
 }
 
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1080px){
     .presentation{
         flex-direction: column;
     }
@@ -136,7 +136,7 @@ footer{
         font-size: 18px;
     }
     .cover img {
-      height: 40%;
+      height: 60%;
     }   
 }
 
