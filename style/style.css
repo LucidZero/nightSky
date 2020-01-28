@@ -62,22 +62,9 @@ body header nav .navLinks .navLink{
     min-height: 80vh;
     align-items: center;
 }
-.presentationTwo{
-    display: flex;
-    width: 90%;
-    margin: auto;
-    min-height: 80vh;
-    align-items: center;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 5%, rgba(175,175,175,0.5) 25%, rgba(175,175,175,0.75) 50%, rgba(175,175,175,0.5) 75%, rgba(255,255,255,1) 95%);
-}
 .introduction{
     flex: 1;
     margin-right: 3vh;
-}
-.introductionTwo{
-    flex: 1;
-    margin-left: 5vh;
 }
 .introText h1{
 font-size: 44px;
@@ -102,32 +89,28 @@ background: linear-gradient(to right,#494964,#6f6f89);
     filter: drop-shadow(0px 5px 3px black);
     animation: drop 1.5s ease;
 }
-footer{
-    background-color: #37363b;
-    text-align: center;
-    color: rgb(212, 212, 212);
-    height: 50px;
-    width: 100%;
-    padding: 12.5px 0 12.5px 0;
+
+.cta{
+    padding: 50px 0px 0px 0px;
 }
+/* .readMore{
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    width: 150px;
+    height:50px;
+    cursor: pointer;
+    font-size: 16px;
+} */
 
 
 @media screen and (max-width: 1024px){
     .presentation{
         flex-direction: column;
     }
-    .presentationTwo{
-        flex-direction: column-reverse;
-    }
     .introduction{
         margin-top: 5vh;
         text-align: center;
-    }
-    .introductionTwo{
-        margin-top: 5vh;
-        text-align: center;
-        margin-left: 0vh;
-        margin-right: 3vh;
     }
     .introText h1{
         font-size: 30px;
