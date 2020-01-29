@@ -102,14 +102,16 @@ footer{
     height: 50px;
     width: 100%;
     padding: 12.5px 0 12.5px 0;
+    margin-top: 100%;
 }
 
 
  /* vvvvvvvv contact.html vvvvvvvv*/
 #contactForm{
     width: 70vh;
-    margin: auto;
+    margin: 10vh auto;
     padding: 7vh 0;
+    
 }
 input{
     width: 100%;
@@ -198,7 +200,7 @@ label{
         min-height: 500px;
       }
       #contactForm{
-          width: 60%;
+          width: 80%;
       }
       #submit{
           font-size: 50%;
