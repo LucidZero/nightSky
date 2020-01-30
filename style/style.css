@@ -102,16 +102,28 @@ footer{
     height: 50px;
     width: 100%;
     padding: 12.5px 0 12.5px 0;
-    margin-top: 100%;
 }
 
 
  /* vvvvvvvv contact.html vvvvvvvv*/
+.pageTop{
+    text-align: center;
+    flex: 1;
+    padding-top: 15vh;
+}
+#bgContact{
+    position: absolute;
+    object-fit: cover;
+    background-size: cover;
+    z-index: -100;
+    margin: 10vh 50%;
+    padding: auto;
+    opacity: 0.7;
+}
 #contactForm{
     width: 70vh;
-    margin: 10vh auto;
+    margin: 0 auto 10vh;
     padding: 7vh 0;
-    
 }
 input{
     width: 100%;
