@@ -22,9 +22,9 @@ $(document).ready(function(){
             $(this).val($(this).val().substr(0, max_length));
         }
     });
-});
 //this above is used to make form only go up to maxlenght on phones
 
+});
 
 
 
