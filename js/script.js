@@ -23,5 +23,20 @@ $(document).ready(function(){
         }
     });
 });
+//this above is used to make form only go up to maxlenght on phones
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 
