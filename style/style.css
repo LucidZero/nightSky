@@ -4,6 +4,9 @@ padding: 0px;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 }
+html{
+overflow-x:hidden;
+}
 body #background{
     background-image: url("../images/nightSky2.png");
     height: 25vh;
@@ -120,6 +123,7 @@ footer{
     padding: auto;
     opacity: 0.7;
 }
+
 #contactForm{
     width: 70vh;
     margin: 0 auto 10vh;
@@ -157,7 +161,7 @@ input{
 label{
     color:#222135;
 }
-
+/* cleaner and scroll bar */
 .cleaner{
     clear:both;
 }
