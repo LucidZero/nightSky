@@ -189,7 +189,7 @@ display: flex;
 }
 .frame{
     overflow: hidden;
-    filter: drop-shadow(0px 0.5vh 0.5vh black);
+    filter: drop-shadow(0px 0.4vh 0.4vh black);
     animation: drop 1.5s ease;
     margin: 0.5vh 0.5vh 0.5vh 0.5vh;
 }
@@ -205,6 +205,7 @@ display: flex;
     rgba(255,255,255,0) 75%);
     border-radius: 3px;
     margin-bottom: 7vh;
+    padding: 0.2vh;
 }
 /* vvvvvvvv responsive vvvvvvvv */
 @media screen and (max-width: 1180px){

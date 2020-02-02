@@ -49,6 +49,6 @@ $(document).ready(function(){
 $(".readMore").click(function(){
     $(this).prev().toggle();
     $(this).text()
-    $(this).text() == 'Read More' ? $(this).text('Read Less') : $(this).text('Read More');
+    $(this).text() == 'Show More' ? $(this).text('Show Less') : $(this).text('Show More');
 });
 
