@@ -47,7 +47,7 @@ $(document).ready(function(){
 }); //document.ready
 
 $(".readMore").click(function(){
-    $(this).prev().toggle();
+    $(this).prev().slideToggle(500);
     $(this).text()
     $(this).text() == 'Show More' ? $(this).text('Show Less') : $(this).text('Show More');
 });

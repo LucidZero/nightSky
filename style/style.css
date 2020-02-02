@@ -192,9 +192,13 @@ display: flex;
     filter: drop-shadow(0px 0.4vh 0.4vh black);
     animation: drop 1.5s ease;
     margin: 0.5vh 0.5vh 0.5vh 0.5vh;
+    
 }
 .imageHolders{
     width:480px;
+    z-index: 50;
+}
+.imageHolders:hover{
 }
 .readMore{
     text-align: center;
@@ -206,6 +210,7 @@ display: flex;
     border-radius: 3px;
     margin-bottom: 7vh;
     padding: 0.2vh;
+    margin-top: 0.5vh;
 }
 /* vvvvvvvv responsive vvvvvvvv */
 @media screen and (max-width: 1180px){
