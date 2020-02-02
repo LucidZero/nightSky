@@ -28,6 +28,13 @@ $(document).ready(function(){
 
 //vvvvvv gallery jquery
 
+$(document).ready(function(){
+        var cw = $('.frame').width();
+        if(cw<280){
+        $('.frame').css({'height':cw+'px'});
+        }
+});
+
 $(window).resize(function(){
     var cw = $('.frame').width();
     if(cw<280){
