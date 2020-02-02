@@ -173,8 +173,29 @@ label{
 }
 
 
-/* vvvvvvvv constellations vvvvvvvv */
-
+/* vvvvvvvv shop vvvvvvvv */
+#shopBody{
+    margin: 5vh auto;
+    width: 100vh;
+    padding: 1.5vh;
+}
+#shopBody .itemBox{
+    display: flex;
+    margin: 3vh;
+    padding: 0.5vh;
+}
+#shopBody .itemBox .itemImage{
+    padding:0 1vh;
+}
+#shopBody .itemBox .itemImage img{
+    width:64px;
+}
+#shopBody .itemBox .itemCounter{
+    width:2.5vh;
+    height: 1.5vh;
+    display: block;
+    background-color: #a0a0be;
+}
 /* vvvvvvvv gallery vvvvvvvv */
 #gallery{
     width: 920px;
@@ -199,6 +220,7 @@ display: flex;
     z-index: 50;
 }
 .imageHolders:hover{
+    width: 150%;
 }
 .readMore{
     text-align: center;
