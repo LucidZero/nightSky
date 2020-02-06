@@ -102,9 +102,8 @@ footer{
     background-color: #37363b;
     text-align: center;
     color: rgb(212, 212, 212);
-    height: 50px;
     width: 100%;
-    padding: 12.5px 0 12.5px 0;
+    padding: 12.5px 0 25px 0;
     margin-top: 0;
 }
 
@@ -228,7 +227,7 @@ label{
 .readMore{
     text-align: center;
     margin: 0px auto;
-    width: 12vh;
+    width: 100px;
     cursor: pointer;
     background: linear-gradient(180deg, rgba(160,160,190,1) 5%,
     rgba(255,255,255,0) 75%);
@@ -304,7 +303,7 @@ label{
       }
       .readMore{
           font-size: 12px;
-          width: 10vh;
+          width: 70px;
       }
       .imageHolders:hover{
          transition: 150ms;
@@ -318,7 +317,7 @@ label{
     
       .readMore{
           font-size: 10px;
-          width: 8vh;
+          width: 60px;
       }
       .imageHolders{
           width: 25.5vw;
@@ -335,5 +334,8 @@ label{
       .imageHolders:hover{
           
          transform:scale(1.3) translate(0, -20%);;
+      }
+      p{
+          font-size: 85%;
       }
 }
