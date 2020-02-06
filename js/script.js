@@ -28,27 +28,27 @@ $(document).ready(function(){
 
 //vvvvvv gallery jquery
 
-$(document).ready(function(){
-        var cw = $('.frame').width();
+/*$(document).ready(function(){
+        var cw = $('.imageHolders').width();
         if(cw<280){
-        $('.frame').css({'height':cw+'px'});
+        $('.imageHolders').css({'height':cw+'px'});
         }
 });
 
 $(window).resize(function(){
-    var cw = $('.frame').width();
+    var cw = $('.imageHolders').width();
     if(cw<280){
-    $('.frame').css({'height':cw+'px'});
+    $('.imageHolders').css({'height':cw+'px'});
     }
 });
-
+*/
 $(document).ready(function(){
     $("#hidden").hide();
-}); //document.ready
+}); //hides row 2
 
 $(".readMore").click(function(){
     $(this).prev().slideToggle(500);
     $(this).text()
     $(this).text() == 'Show More' ? $(this).text('Show Less') : $(this).text('Show More');
-});
+});//animates read more  when it goes up and down
 
