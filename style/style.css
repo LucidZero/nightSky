@@ -221,7 +221,7 @@ label{
 }
  .imageHolders:hover{
     transition: 150ms;
-    transform:scale(1.7);
+    transform:scale(1.7) translate(0, -20%);
     position: absolute;
     filter: drop-shadow(0 0 0.9vh rgb(188, 217, 255));
 } 
@@ -308,7 +308,7 @@ label{
       }
       .imageHolders:hover{
          transition: 150ms;
-         transform:scale(1.7);
+         transform:scale(1.7) translate(0, -20%);;
          position: absolute;
          filter: drop-shadow(0 0 0.9vh rgb(188, 217, 255));
          animation: drop 1.5s ease;
@@ -327,13 +327,13 @@ label{
           width: 90%;
       }
       .frame{
-          margin-top: 1vh;
+          margin-top: 0.8vh;
       }
       .imageHolders{
           width: 28vw;
       }
       .imageHolders:hover{
           
-         transform:scale(1.3);
+         transform:scale(1.3) translate(0, -20%);;
       }
 }
