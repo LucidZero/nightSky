@@ -322,4 +322,13 @@ label{
       .imageHolders{
           width: 25.5vw;
       }
+      #gallery{
+          width: 90%;
+      }
+      .frame{
+          margin-top: 1vh;
+      }
+      .imageHolders{
+          width: 28vw;
+      }
 }
