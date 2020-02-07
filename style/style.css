@@ -331,3 +331,9 @@ label{
          width: 40vw;
      }
     }
+    
+@media screen and (max-width: 400px){
+     #galleryFoot{
+         margin-top: 400px;
+     }
+    }
