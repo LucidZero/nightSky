@@ -29,19 +29,26 @@ $(document).ready(function(){
 //vvvvvv gallery jquery
 
 /*$(document).ready(function(){
-        var cw = $('.imageHolders').width();
-        if(cw<280){
-        $('.imageHolders').css({'height':cw+'px'});
+        var cw = $('#gallery').width();
+        console.log(cw);
+        
+        if(cw<=473){
+            $( "#gallery" ).empty();
+        $( "main" ).html( " <div id='gallery'> <div class='row'> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> <div class='row'> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> <div id='hidden'><div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div></div><div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div></div> <div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> <div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> </div> </div>");
         }
 });
-
 $(window).resize(function(){
-    var cw = $('.imageHolders').width();
-    if(cw<280){
-    $('.imageHolders').css({'height':cw+'px'});
+    var cw = $('#gallery').width();
+    if(cw<=473){
+        $( "#gallery" ).empty();
+        $( "main" ).html( " <div id='gallery'> <div class='row'> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> <div class='row'> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> <div id='hidden'><div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div></div><div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div></div> <div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> <div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> </div> </div>");
     }
+$(document).ready(function(){
+    $("#hidden").hide();
+}); //hides row 2
 });
 */
+
 $(document).ready(function(){
     $("#hidden").hide();
 }); //hides row 2
