@@ -27,28 +27,24 @@ $(document).ready(function(){
 //^^^^^^^^^^^^^ this above is used to make form only go up to maxlenght on phones
 
 //vvvvvv gallery jquery
-
-/*$(document).ready(function(){
+/*
+$(document).ready(function(){
         var cw = $('#gallery').width();
         console.log(cw);
         
-        if(cw<=473){
-            $( "#gallery" ).empty();
-        $( "main" ).html( " <div id='gallery'> <div class='row'> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> <div class='row'> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> <div id='hidden'><div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div></div><div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div></div> <div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> <div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> </div> </div>");
+        if(cw<=280){
+
+            $('.frame').css({'width':cw-'10p'});
         }
 });
 $(window).resize(function(){
     var cw = $('#gallery').width();
-    if(cw<=473){
-        $( "#gallery" ).empty();
-        $( "main" ).html( " <div id='gallery'> <div class='row'> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> <div class='row'> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> <div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> <div id='hidden'><div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div></div><div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div></div> <div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> <div class='row2'><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div><div class='frame'><img class='imageHolders' src='images/article1.jpg'></div> </div> </div> </div>");
+    if(cw<=280){
+
+        $('.frame').css({'width':cw-'10px'});
     }
-$(document).ready(function(){
-    $("#hidden").hide();
-}); //hides row 2
 });
 */
-
 $(document).ready(function(){
     $("#hidden").hide();
 }); //hides row 2
