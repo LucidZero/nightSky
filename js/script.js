@@ -46,6 +46,9 @@ $(window).resize(function(){
 });
 */
 $(document).ready(function(){
+    $('#galleryFoot').css({"margin-top": "600px"});
+});
+$(document).ready(function(){
     $(".hidden").hide();
 });
 $(document).ready(function(){
