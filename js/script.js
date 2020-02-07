@@ -46,12 +46,44 @@ $(window).resize(function(){
 });
 */
 $(document).ready(function(){
-    $("#hidden").hide();
-}); //hides row 2
+    $(".hidden").hide();
+});
+$(document).ready(function(){
+    $(".hidden2").hide();
+}); //hides row 2 and row 3
+
+var counter=0;
 
 $(".readMore").click(function(){
-    $(this).prev().slideToggle(500);
-    $(this).text()
+    
+    counter+=1;
+    console.log(counter);
+    if($(this).text() == 'Show Less') { 
+
+        if(counter%2!=0){
+        $('.hidden2').slideToggle(500);
+
+    }
+    else{
+
+    $('.hidden').slideToggle(500);
+    $(this).text() == 'Show Less' ? $(this).text('Show More') : $(this).text('Show Less');
+
+    }
+
+    }
+    else{
+
+    if(counter%2!=0){
+    $('.hidden').slideToggle(500);
+
+    }
+    else{
+    
+    $('.hidden2').slideToggle(500);
     $(this).text() == 'Show More' ? $(this).text('Show Less') : $(this).text('Show More');
-});//animates read more  when it goes up and down
+    
+}
+}
+});
 

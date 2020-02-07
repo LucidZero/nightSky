@@ -209,6 +209,9 @@ label{
 .row2{
     display: flex;
 }
+.row3{
+    display: flex;
+}
 .frame{
     margin: 1vw 2vw 1vw 2vw;
     flex: 1;
