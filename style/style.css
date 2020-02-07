@@ -305,7 +305,7 @@ label{
       }
       .imageHolders:hover{
          transition: 150ms;
-         transform:scale(0.7) translate(-40%, -60%);
+         transform:scale(1.5) translate(-40%, -60%);
          position: absolute;
          filter: drop-shadow(0 0 0.9vh rgb(188, 217, 255));
          animation: drop 1.5s ease;
@@ -322,7 +322,7 @@ label{
       }
       .imageHolders:hover{
           
-         transform:scale(0.6) translate(-40%, -60%);
+         transform:scale(1.2) translate(-40%, -60%);
       }
       p{
           font-size: 85%;
