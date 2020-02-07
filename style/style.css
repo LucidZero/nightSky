@@ -197,6 +197,15 @@ label{
     background-color: #a0a0be;
 }
 /* vvvvvvvv gallery vvvvvvvv */
+.title{
+    text-align: center;
+    padding: 10vh 0 0 0;
+}
+.title h1{
+font-size: 44px;
+font-weight: 500;
+color: rgb(71, 67, 100);
+}
 #gallery{
     width: 1080px;
     margin: 8vh auto 2vh;
@@ -333,6 +342,15 @@ label{
     }
     
 @media screen and (max-width: 400px){
+    .title{
+        padding-top: 5vh;
+    }
+    .title h1{
+        font-size: 33px;
+    }
+    #gallery{
+        margin-top: 3vh;
+    }
      #galleryFoot{
          margin-top: 600px;
      }

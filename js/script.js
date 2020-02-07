@@ -46,7 +46,7 @@ $(window).resize(function(){
 });
 */
 $(document).ready(function(){
-    $('#galleryFoot').css({"margin-top": "600px"});
+    $('#galleryFoot').css({"margin-top": "500px"});
 });
 $(document).ready(function(){
     $(".hidden").hide();
@@ -72,7 +72,7 @@ $(".readMore").click(function(){
     $('.hidden').slideToggle(500);
     $(this).text() == 'Show Less' ? $(this).text('Show More') : $(this).text('Show Less');
 
-    $('#galleryFoot').css({"margin-top": "600px"});
+    $('#galleryFoot').css({"margin-top": "500px"});
     }
 
     }
@@ -87,7 +87,7 @@ $(".readMore").click(function(){
     
     $('.hidden2').slideToggle(500);
     $(this).text() == 'Show More' ? $(this).text('Show Less') : $(this).text('Show More');
-    $('#galleryFoot').css({"margin-top": "150px"});
+    $('#galleryFoot').css({"margin-top": "250px"});
 }
 }
 });
