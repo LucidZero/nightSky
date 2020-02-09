@@ -218,6 +218,7 @@ color: rgb(71, 67, 100);
 }
 .imageHolders{
     width: 464px;
+    transition: 200ms;
 }
  .imageHolders:hover{
     transition: 200ms;
@@ -261,6 +262,7 @@ color: rgb(71, 67, 100);
 }
 .shopBody .itemBox .itemImage img{
     width: 370px;
+    transition: 200ms;
 }
 .itemImage img:hover{
 transition: 200ms;
