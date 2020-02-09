@@ -255,7 +255,6 @@ color: rgb(71, 67, 100);
 }
 /* vvvvvvvv shop vvvvvvvv */
 #shopWrapper{
-    width: 80%;
     margin: 0 auto;
     width: fit-content;
     display: flex;
@@ -265,7 +264,6 @@ color: rgb(71, 67, 100);
 }
 .shopBody{
     padding: 1.5vh;
-    width: fit-content;
     display: flex;
     flex: 1;
     margin: 0 auto;
