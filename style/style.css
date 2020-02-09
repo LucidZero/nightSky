@@ -310,6 +310,9 @@ color: rgb(129, 129, 129);
     .imageHolders{
         width: 35vw;
     }
+    .readMore{
+        margin-bottom: 13vh;
+    }
 }
 @media screen and (max-width: 700px){
     .cover img {
@@ -327,32 +330,31 @@ color: rgb(129, 129, 129);
       #submit{
           font-size: 50%;
       }
-      .readMore{
-          font-size: 12px;
-          width: 70px;
-      }
-      .imageHolders:hover{
+      .imageHolders{/*
          transition: 150ms;
          transform:scale(1.5) translate(0, -20%);
          position: absolute;
          filter: drop-shadow(0 0 0.9vh rgb(188, 217, 255));
-         animation: drop 1.5s ease;
+         animation: drop 1.5s ease;*/
+         pointer-events: none;
+         width: 370px;
      } 
+     .row, .row2, .row3{
+    flex-direction: column;
+    align-items: center;
+     }
 }
 @media screen and (max-width: 550px){
       #gallery{
           width: 90%;
       }
-      .imageHolders:hover{
+      /*.imageHolders:hover{
           
          transform:scale(1.2) translate(0, -20%);
-      }
+      }*/
       p{
           font-size: 85%;
       }
-     .imageHolders{
-         width: 40vw;
-     }
     }
     
 @media screen and (max-width: 400px){
@@ -365,13 +367,13 @@ color: rgb(129, 129, 129);
     #gallery{
         margin-top: 3vh;
     }
-     #galleryFoot{
-         margin-top: 600px;
-     }
     .shopBody .itemImage img{
          max-width: 270px;
      }
     .itemInfo h2{
         font-size: 16px;
     }
+    .imageHolders{
+         width: 270px;
+     }
     }
