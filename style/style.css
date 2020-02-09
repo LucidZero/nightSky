@@ -255,17 +255,20 @@ color: rgb(71, 67, 100);
 }
 /* vvvvvvvv shop vvvvvvvv */
 #shopWrapper{
-    width: fit-content;
+    width: 80%;
     margin: 0 auto;
+    width: fit-content;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    display: table;
 }
 .shopBody{
     padding: 1.5vh;
     width: fit-content;
     display: flex;
     flex: 1;
+    margin: 0 auto;
 }
 .shopBody .itemBox{
     margin: 1vh;
