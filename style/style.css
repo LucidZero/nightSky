@@ -247,6 +247,10 @@ color: rgb(71, 67, 100);
 .shopBody .itemBox .itemImage img{
     width: 370px;
 }
+.itemImage img:hover{
+transition: 200ms;
+transform:scale(1.05);
+}
 .shopBody .itemBox .itemCounter{
     width:2.5vh;
     height: 1.5vh;
@@ -338,6 +342,7 @@ color: rgb(129, 129, 129);
          animation: drop 1.5s ease;*/
          pointer-events: none;
          width: 370px;
+         z-index: 50;
      } 
      .row, .row2, .row3{
     flex-direction: column;
