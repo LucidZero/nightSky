@@ -141,6 +141,8 @@ input{
 }
 #firstName, #lastName{
     width: 60%;
+    
+    text-transform:capitalize;
 }
 #msg{
     padding: 12px 10px;
@@ -157,14 +159,27 @@ input{
     max-width: 20%;
     padding:6px 5px;
     margin-left: auto;
+    cursor:pointer;
 }
 label{
     color:#222135;
 }
-/* cleaner and scroll bar */
-.cleaner{
-    clear:both;
+#emailAlert{
+    color: rgb(151, 0, 0);
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+/* cleaner and scroll bar */
 
 .hmm::-webkit-scrollbar {
     display: none;

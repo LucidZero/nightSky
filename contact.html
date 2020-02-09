@@ -46,16 +46,17 @@
         <section id="contactForm">
         <form action="#" method="POST" >
             <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" maxlength="25"/>
+            <input type="text" id="firstName" name="firstName" maxlength="25" placeholder="Max length: 25"/>
 
             <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" maxlength="25"/>
+            <input type="text" id="lastName" name="lastName" maxlength="25" placeholder="Max length: 25"/>
             
             <label for="mail">Email Adress</label>
-            <input type="text" id="email" name="email"/>
+            <input type="text" id="email" name="email" placeholder="example123@example.com"/>
+            <div id="emailAlert"><p>Not a valid email adress!</p></div>
             
             <label for="letter">Message</label>
-            <textarea type="text" id="msg" name="message" maxlength="300"></textarea>
+            <textarea type="text" id="msg" name="message" maxlength="300" placeholder="Max length: 300"></textarea>
             
             <input id="submit" type="submit" name="submit" value="Submit"/>
         </form>

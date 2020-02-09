@@ -1,3 +1,4 @@
+/* VVVVVVVVVV makes max lenght work on android VVVVVVVV */
 $(document).ready(function(){
     $(function() {
     maxLength = $("#firstName").attr("maxlength");
@@ -23,21 +24,15 @@ $(document).ready(function(){
         }
     });
 });
-
-$(function(){
-    $("#firstName").text().charAt(0). toUpperCase();
-    
-    $("#lastName").text().charAt(0). toUpperCase();
 });
 
-
-});
+/* VVVVVV show more show less VVVVVV*/ 
 $(document).ready(function(){
     $(".hidden").hide();
 });
 $(document).ready(function(){
     $(".hidden2").hide();
-}); //hides row 2 and row 3
+}); //hides rows 2 and row 3
 
 var counter=0;
 
@@ -62,4 +57,28 @@ $(".readMore").click(function(){
 }
 }
 });
+/* VVVVVV regex VVVVVV */
+$(document).ready(function(){
+    $("#emailAlert").hide();
+});
 
+$("#submit").attr("disabled", true);
+
+$("#email").on("keyup", function(){
+var regex=/^(\w+)\@([a-z]+)\.([a-z]{3})$/g;
+var textEmail=$("#email").val();
+    if(regex.test(textEmail)){
+
+        $("#emailAlert").hide();
+    $("#submit").attr("disabled", false);
+
+    $("#submit").css({"cursor": "pointer"});
+    }
+    else{
+        
+    $("#emailAlert").show();
+        $("#submit").attr("disabled", true);
+        $("#submit").css({"cursor": "default"});
+
+    }
+});
