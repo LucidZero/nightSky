@@ -139,7 +139,7 @@ input{
     border: 2px solid rgba(48, 46, 73, 0.473);
     margin-top: 3px;
 }
-#fname, #lname{
+#firstName, #lastName{
     width: 60%;
 }
 #msg{
@@ -264,7 +264,9 @@ font-size: 20px;
 font-size: 15px;
 color: rgb(129, 129, 129);
 }
-
+.title p{
+    color: rgb(126, 118, 155);
+}
 /* vvvvvvvv responsive vvvvvvvv */
 @media screen and (max-width: 1320px){
     .shopBody{
