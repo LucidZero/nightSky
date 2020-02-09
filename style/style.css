@@ -274,6 +274,7 @@ color: rgb(71, 67, 100);
 }
 .shopBody .itemBox .itemImage{
     overflow: hidden;
+    height: 370px;
 }
 .shopBody .itemBox .itemImage img{
     width: 370px;
