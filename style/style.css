@@ -333,7 +333,7 @@ color: rgb(129, 129, 129);
         max-height: 15vh;
     }
     .cover img {
-      height: 60%;
+      height: 54vw;
       margin-top: 0;
     }
     #background{
@@ -355,7 +355,7 @@ color: rgb(129, 129, 129);
 }
 @media screen and (max-width: 700px){
     .cover img {
-        height: 30%;
+        height: 54vw;
       }
       .presentation{
         min-height: 500px;
