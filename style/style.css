@@ -172,30 +172,6 @@ label{
     -ms-overflow-style: none;
 }
 
-
-/* vvvvvvvv shop vvvvvvvv */
-#shopBody{
-    margin: 5vh auto;
-    width: 100vh;
-    padding: 1.5vh;
-}
-#shopBody .itemBox{
-    display: flex;
-    margin: 3vh;
-    padding: 0.5vh;
-}
-#shopBody .itemBox .itemImage{
-    padding:0 1vh;
-}
-#shopBody .itemBox .itemImage img{
-    width:64px;
-}
-#shopBody .itemBox .itemCounter{
-    width:2.5vh;
-    height: 1.5vh;
-    display: block;
-    background-color: #a0a0be;
-}
 /* vvvvvvvv gallery vvvvvvvv */
 .title{
     text-align: center;
@@ -247,7 +223,50 @@ color: rgb(71, 67, 100);
     margin-top: 0.5vh;
 
 }
+/* vvvvvvvv shop vvvvvvvv */
+#shopWrapper{
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.shopBody{
+    padding: 1.5vh;
+    width: fit-content;
+    display: flex;
+    flex: 1;
+}
+.shopBody .itemBox{
+    margin: 1vh;
+    padding: 0.5vh;
+}
+.shopBody .itemBox .itemImage{
+    overflow: hidden;
+}
+.shopBody .itemBox .itemImage img{
+    width: 370px;
+}
+.shopBody .itemBox .itemCounter{
+    width:2.5vh;
+    height: 1.5vh;
+    display: block;
+    background-color: #a0a0be;
+}
+.itemInfo h2{
+font-size: 20px;
+}
+.itemInfo p{
+font-size: 15px;
+color: rgb(129, 129, 129);
+}
+
 /* vvvvvvvv responsive vvvvvvvv */
+@media screen and (max-width: 1320px){
+    .shopBody{
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 1180px){
     .presentation{
         flex-direction: column;
@@ -321,11 +340,6 @@ color: rgb(71, 67, 100);
      } 
 }
 @media screen and (max-width: 550px){
-    
-      .readMore{
-          font-size: 10px;
-          width: 60px;
-      }
       #gallery{
           width: 90%;
       }
@@ -354,4 +368,10 @@ color: rgb(71, 67, 100);
      #galleryFoot{
          margin-top: 600px;
      }
+    .shopBody .itemImage img{
+         max-width: 270px;
+     }
+    .itemInfo h2{
+        font-size: 16px;
+    }
     }

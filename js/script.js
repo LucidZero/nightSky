@@ -1,30 +1,30 @@
 $(document).ready(function(){
     $(function() {
-    max_length = $("#fname").attr("maxlength");
+    maxLength = $("#fname").attr("maxlength");
     $("#fname").on("keyup", function() {
-        if(this.value.length >= max_length) {
-            $(this).val($(this).val().substr(0, max_length));
+        if(this.value.length >= maxLength) {
+            $(this).val($(this).val().substr(0, maxLength));
         }
     });
 });
     $(function() {
-    max_length = $("#lname").attr("maxlength");
+    maxLength = $("#lname").attr("maxlength");
     $("#lname").on("keyup", function() {
-        if(this.value.length >= max_length) {
-            $(this).val($(this).val().substr(0, max_length));
+        if(this.value.length >= maxLength) {
+            $(this).val($(this).val().substr(0, maxLength));
         }
     });
 });
     $(function() {
-    max_length = $("#msg").attr("maxlength");
+    maxLength = $("#msg").attr("maxlength");
     $("#msg").on("keyup", function() {
-        if(this.value.length >= max_length) {
-            $(this).val($(this).val().substr(0, max_length));
+        if(this.value.length >= maxLength) {
+            $(this).val($(this).val().substr(0, maxLength));
         }
     });
 });
 });
-//^^^^^^^^^^^^^ this above is used to make form only go up to maxlenght on phones
+//^^^^^^^^^^^^^ this above is used to make form only go up to maxlength on phones
 
 //vvvvvv gallery jquery
 /*
