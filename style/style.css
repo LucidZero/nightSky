@@ -33,7 +33,7 @@ header{
     margin: auto;
     align-items: center;
 }
-.navLinks{
+header .navLinks{
     display: flex;
 }
 header nav{
@@ -42,7 +42,7 @@ flex: 1;
 header nav .navLinks{
     justify-content: space-around;
 }
-body header nav .navLinks .navLink{
+header nav .navLinks .navLink{
     color: #a0a0be;
     font-size: 18px;
 }
@@ -105,8 +105,22 @@ footer{
     width: 100%;
     padding: 12.5px 0 25px 0;
     margin-top: 0;
+    display: flex;
+    justify-content: center;
 }
-
+footer nav{
+    width: 350px;
+    justify-content: center;
+    margin:0 30px 0 0 ;
+}
+footer nav .navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer nav .navLinks li a{
+    color: rgb(212, 212, 212);
+}
 
  /* vvvvvvvv contact.html vvvvvvvv*/
 .pageTop{
@@ -353,12 +367,7 @@ color: rgb(129, 129, 129);
       #submit{
           font-size: 50%;
       }
-      .imageHolders{/*
-         transition: 150ms;
-         transform:scale(1.5) translate(0, -20%);
-         position: absolute;
-         filter: drop-shadow(0 0 0.9vh rgb(188, 217, 255));
-         animation: drop 1.5s ease;*/
+      .imageHolders{
          pointer-events: none;
          width: 370px;
          z-index: 50;
@@ -367,20 +376,24 @@ color: rgb(129, 129, 129);
     flex-direction: column;
     align-items: center;
      }
+    footer{
+        flex-direction: column;
+    }
+    footer nav{
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width: 550px){
       #gallery{
           width: 90%;
       }
-      /*.imageHolders:hover{
-          
-         transform:scale(1.2) translate(0, -20%);
-      }*/
       p{
           font-size: 85%;
       }
-    }
-    
+      footer li{
+          font-size: 85%;
+      }
+}
 @media screen and (max-width: 400px){
     .title{
         padding-top: 5vh;
