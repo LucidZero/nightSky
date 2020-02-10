@@ -1,4 +1,11 @@
-#bgContact {
+    * {
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    }
+
+    #bgContact {
     background-size:cover;
     margin:10vh 50%;
     object-fit:cover;
@@ -67,11 +74,6 @@
     z-index:50;
     }
     
-    #next img {
-    height:64px;
-    margin:auto 0;
-    }
-    
     #previous {
     cursor:pointer;
     height:80vh;
@@ -80,11 +82,6 @@
     position:absolute;
     width:50%;
     z-index:50;
-    }
-    
-    #previous img {
-    height:64px;
-    margin:auto 0;
     }
     
     #shopWrapper {
@@ -110,14 +107,7 @@
     min-width:20%;
     padding:6px 5px;
     }
-    
-    * {
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-    margin:0;
-    padding:0;
-    }
-    
+  
     .cover {
     display:flex;
     flex:1;
