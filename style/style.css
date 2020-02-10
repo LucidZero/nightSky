@@ -64,10 +64,12 @@ header nav .navLinks .navLink{
     padding-left: 50px;
     z-index: -2;
 }
-#gradientBackground{
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(175,175,175,0.5) 25%, rgba(175,175,175,0.75) 50%, rgba(175,175,175,0.5) 75%, rgba(255,255,255,1) 95%);
-    min-width: 100%;
+#gradientBackground{/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#969696+5,bcbcbc+36,bcbcbc+36,bcbcbc+37,bcbcbc+37,bcbcbc+40,ffffff+64,ffffff+71,ffffff+71,ffffff+77,ffffff+84&1+0,0+81 */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(150,150,150,1) 0%, rgba(150,150,150,0.94) 5%, rgba(188,188,188,0.56) 36%, rgba(188,188,188,0.55) 37%, rgba(188,188,188,0.51) 40%, rgba(255,255,255,0.21) 64%, rgba(255,255,255,0.12) 71%, rgba(255,255,255,0.05) 77%, rgba(255,255,255,0) 81%, rgba(255,255,255,0) 84%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(150,150,150,1) 0%,rgba(150,150,150,0.94) 5%,rgba(188,188,188,0.56) 36%,rgba(188,188,188,0.55) 37%,rgba(188,188,188,0.51) 40%,rgba(255,255,255,0.21) 64%,rgba(255,255,255,0.12) 71%,rgba(255,255,255,0.05) 77%,rgba(255,255,255,0) 81%,rgba(255,255,255,0) 84%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(150,150,150,1) 0%,rgba(150,150,150,0.94) 5%,rgba(188,188,188,0.56) 36%,rgba(188,188,188,0.55) 37%,rgba(188,188,188,0.51) 40%,rgba(255,255,255,0.21) 64%,rgba(255,255,255,0.12) 71%,rgba(255,255,255,0.05) 77%,rgba(255,255,255,0) 81%,rgba(255,255,255,0) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#969696', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        min-width: 100%;
 }
 .introduction{
     flex: 1;
