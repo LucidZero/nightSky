@@ -144,7 +144,7 @@ footer nav .navLinks li a{
 #previous{
     z-index: 50;
     position: absolute;
-    width: 300px;
+    width: 50%;
     height: 80vh;
     cursor: pointer;
     opacity: 0.3;
@@ -157,11 +157,11 @@ footer nav .navLinks li a{
 #next{
     z-index:50;
     position: relative;
-    width: 300px;
+    width: 50%;
     height: 80vh;
     margin-left: auto;
     cursor: pointer;
-    padding: 35vh 0 35vh 250px;
+    padding: 35vh 0 35vh 47%;
     opacity: 0.3;
 }
 #next img{
