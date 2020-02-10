@@ -17,15 +17,13 @@ body #background{
     width: 100%;
     z-index: -1;
   }
-button{
-    font-family: 'Poppins',sans-serif;
-}
 a{
 text-decoration: none;
 }
 li{
 list-style: none;
 }
+/*vvvvvvvv Index vvvvvvvv*/
 header{
     display: flex;
     width: 90%;
@@ -47,19 +45,22 @@ header nav .navLinks .navLink{
     font-size: 18px;
 }
 
-.presentation{
+.presentation {
     display: flex;
-    width: 90%;
+    min-width: 100vw;
     margin: auto;
     min-height: 80vh;
     align-items: center;
+    padding-left: 3vw;
+    padding-right: 1vw;
 }
-.presentationTwo{
+.presentationTwo {
     display: flex;
-    width: 90%;
+    min-width: 100vw;
     margin: auto;
     min-height: 80vh;
     align-items: center;
+    padding-left: 50px;
 }
 #gradientBackground{
     background: rgb(255,255,255);
@@ -121,7 +122,18 @@ footer nav .navLinks {
 footer nav .navLinks li a{
     color: rgb(212, 212, 212);
 }
-
+#flexBoxIndex{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0vw;
+    transition: 1000ms;
+}
+.slider{
+    max-width: 1920px;
+}
+#previous{
+    
+}
  /* vvvvvvvv contact.html vvvvvvvv*/
 .pageTop{
     text-align: center;
@@ -307,21 +319,33 @@ color: rgb(129, 129, 129);
     }
 }
 @media screen and (max-width: 1180px){
+    #flexBoxIndex{
+        display: initial;
+    }
     .presentation{
         flex-direction: column;
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+        min-width: 0;
     }
     .presentationTwo{
         flex-direction: column-reverse;
+        width: 90%;
+        padding-left: 0;
+        min-width: 0;
     }
     .introduction{
         margin-top: 5vh;
         text-align: center;
+        margin-bottom: 3vh;
     }
     .introductionTwo{
         margin-top: 5vh;
         text-align: center;
         margin-left: 0vh;
         margin-right: 3vh;
+        margin-bottom: 3vh;
     }
     .introText h1{
         font-size: 30px;
@@ -357,11 +381,12 @@ color: rgb(129, 129, 129);
     .cover img {
         height: 54vw;
       }
-      .presentation{
+      .presentation, .presentationTwo{
         min-height: 500px;
       }
-      .presentationTwo{
-        min-height: 500px;
+      .introduction, .introductionTwo{
+          
+        margin-bottom: 3vh;
       }
       #contactForm{
           width: 80%;

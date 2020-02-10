@@ -57,13 +57,15 @@ $(".readMore").click(function(){
 }
 }
 });
-/* VVVVVV regex VVVVVV */
+
+
+
+/*vvvvvv REGEX vvvvvv*/
 $(document).ready(function(){
     $("#emailAlert").hide();
 });
 
 $("#submit").attr("disabled", true);
-
 $("#email").on("keyup", function(){
 var regex=/^(\w+)\@([a-z]+)\.([a-z]{3})$/g;
 var textEmail=$("#email").val();
@@ -82,3 +84,20 @@ var textEmail=$("#email").val();
 
     }
 });
+
+
+
+/*vvvvvv Slider on index page vvvvvv*/
+    var sliderMargin=0;
+setInterval(function(){
+    //every xxxxms switch to the next slider on 200vw go to 0vw and like that in circles
+    if (sliderMargin > -200){
+    sliderMargin-=100;
+    console.log(sliderMargin);
+    $("#flexBoxIndex").css({"margin-left":sliderMargin+"vw"});
+    }
+    else{
+    sliderMargin=0; 
+    $("#flexBoxIndex").css({"margin-left":sliderMargin+"vw"});
+    }
+},7000);
