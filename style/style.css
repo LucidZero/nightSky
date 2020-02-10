@@ -413,6 +413,7 @@ color: rgb(129, 129, 129);
 
     #sliderButtons, #previous, #next{
         z-index: -1000;
+        opacity: 0;
     }
 }
 @media screen and (max-width: 700px){
