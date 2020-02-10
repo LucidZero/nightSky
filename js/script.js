@@ -100,7 +100,7 @@ setInterval(function(){
     sliderMargin=0; 
     $("#flexBoxIndex").css({"margin-left":sliderMargin+"vw"});
     }
-},7000);
+},10000);
 
 /*vvvvvv slider buttons vvvvvv */
 $('#previous').click(function(){

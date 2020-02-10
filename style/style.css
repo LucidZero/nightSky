@@ -130,7 +130,7 @@ footer nav .navLinks li a{
     display: flex;
     flex-direction: row;
     margin-left: 0vw;
-    transition: 1000ms;
+    transition: 500ms;
 }
 .slider{
     max-width: 1920px;
