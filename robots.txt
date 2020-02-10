@@ -1,2 +1,2 @@
-User-Agent: Googlebot
-Disallow: /shop
+User-agent: *
+Disallow: /admin/
