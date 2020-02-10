@@ -38,7 +38,9 @@ var counter=0;
 
 $(".readMore").click(function(){
     counter+=1;
+
     if($(this).text() == 'Show Less') { 
+
         if(counter%2!=0){
         $('.hidden2').slideToggle(500);
     }
@@ -48,6 +50,7 @@ $(".readMore").click(function(){
     }
     }
     else{
+        
     if(counter%2!=0){
     $('.hidden').slideToggle(500);
     }
@@ -69,23 +72,19 @@ $("#submit").attr("disabled", true);
 $("#email").on("keyup", function(){
 var regex=/^(\w+)\@([a-z]+)\.([a-z]{3})$/g;
 var textEmail=$("#email").val();
-    if(regex.test(textEmail)){
 
+    if(regex.test(textEmail)){
         $("#emailAlert").hide();
     $("#submit").attr("disabled", false);
-
     $("#submit").css({"cursor": "pointer"});
     }
     else{
-        
     $("#emailAlert").show();
         $("#submit").attr("disabled", true);
         $("#submit").css({"cursor": "default"});
 
     }
 });
-
-
 
 /*vvvvvv Slider on index page vvvvvv*/
     var sliderMargin=0;
