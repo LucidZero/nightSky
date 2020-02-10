@@ -101,3 +101,27 @@ setInterval(function(){
     $("#flexBoxIndex").css({"margin-left":sliderMargin+"vw"});
     }
 },7000);
+
+/*vvvvvv slider buttons vvvvvv */
+$('#previous').click(function(){
+    if (sliderMargin < 0){
+    sliderMargin+=100; 
+    $("#flexBoxIndex").css({"margin-left":sliderMargin+"vw"});
+    }
+    else{
+        sliderMargin=-200;
+    $("#flexBoxIndex").css({"margin-left":sliderMargin+"vw"});
+
+    }
+});
+$('#next').click(function(){
+    if (sliderMargin > -200){
+    sliderMargin-=100; 
+    $("#flexBoxIndex").css({"margin-left":sliderMargin+"vw"});
+    }
+    else{
+        sliderMargin=0;
+    $("#flexBoxIndex").css({"margin-left":sliderMargin+"vw"});
+
+    }
+});

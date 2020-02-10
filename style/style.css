@@ -53,6 +53,7 @@ header nav .navLinks .navLink{
     align-items: center;
     padding-left: 3vw;
     padding-right: 1vw;
+    z-index: -2;
 }
 .presentationTwo {
     display: flex;
@@ -61,6 +62,7 @@ header nav .navLinks .navLink{
     min-height: 80vh;
     align-items: center;
     padding-left: 50px;
+    z-index: -2;
 }
 #gradientBackground{
     background: rgb(255,255,255);
@@ -131,8 +133,38 @@ footer nav .navLinks li a{
 .slider{
     max-width: 1920px;
 }
+#sliderButtons{
+    width: 100vw;
+    height: 80vh;
+    z-index: 49;
+    position: absolute;
+}
 #previous{
-    
+    z-index: 50;
+    position: absolute;
+    width: 300px;
+    height: 80vh;
+    cursor: pointer;
+    opacity: 0.3;
+    padding: 35vh 0;
+}
+#previous img{
+    height:64px ;
+    margin: auto 0;
+}
+#next{
+    z-index:50;
+    position: relative;
+    width: 300px;
+    height: 80vh;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 35vh 0 35vh 250px;
+    opacity: 0.3;
+}
+#next img{
+    height:64px ;
+    margin: auto 0;
 }
  /* vvvvvvvv contact.html vvvvvvvv*/
 .pageTop{
@@ -376,6 +408,12 @@ color: rgb(129, 129, 129);
     .readMore{
         margin-bottom: 13vh;
     }
+
+
+
+    #sliderButtons, #previous, #next{
+        z-index: -1000;
+    }
 }
 @media screen and (max-width: 700px){
     .cover img {
@@ -405,6 +443,7 @@ color: rgb(129, 129, 129);
      }
     footer{
         flex-direction: column;
+        margin-top: 5vh;
     }
     footer nav{
         margin: 0 auto;
@@ -420,6 +459,10 @@ color: rgb(129, 129, 129);
       footer li{
           font-size: 85%;
       }
+      
+    footer{
+        margin-top: 0vh;
+    }
 }
 @media screen and (max-width: 400px){
     .title{
@@ -440,4 +483,5 @@ color: rgb(129, 129, 129);
     .imageHolders{
          width: 270px;
      }
+     
     }
